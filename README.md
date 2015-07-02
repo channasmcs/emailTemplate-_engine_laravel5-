@@ -7,7 +7,6 @@ mail.php
 
 <pre>
 <?php
-return [
 'driver' => env('MAIL_DRIVER',' smtp'),
 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 'port' => env('MAIL_PORT', 587),
@@ -17,7 +16,6 @@ return [
 'password' => env('MyPassword'),
 'sendmail' => '/usr/sbin/sendmail -bs',
 'pretend' => false,
-];
 ?>
 </pre>
 
