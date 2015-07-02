@@ -14,7 +14,10 @@ return [
 'password' => env('MyPassword'),
 'sendmail' => '/usr/sbin/sendmail -bs',
 'pretend' => false,
-];?>
+];
+?>
+
+
 
 .env
 
