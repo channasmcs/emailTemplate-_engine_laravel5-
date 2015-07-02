@@ -7,7 +7,6 @@ mail.php
 
 <pre>
 <?php
-
 return [
 'driver' => env('MAIL_DRIVER',' smtp'),
 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
