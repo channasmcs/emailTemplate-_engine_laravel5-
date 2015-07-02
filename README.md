@@ -3,7 +3,11 @@ this is the way end mail with Email Template Engine .save templates in database 
 
 frist confige your laravel email config file
 mail.php
+
+
+<pre>
 <?php
+
 return [
 'driver' => env('MAIL_DRIVER',' smtp'),
 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
@@ -16,14 +20,18 @@ return [
 'pretend' => false,
 ];
 ?>
+</pre>
 
 
 
-.env
-
+.env file
+<pre>
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=MyUsername@gmail.com
 MAIL_PASSWORD=MyPassword
+</pre>
+
+
 
