@@ -32,12 +32,7 @@ MAIL_PASSWORD=MyPassword
 
 create data base & create email tempalte migration php artisan <b>make:migration create_users_table</b>  upload migration file 
 <pre>
-<?php
-
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
-class CreateUsersTable extends Migration {
+class CreateEmailtemplateTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -46,15 +41,16 @@ class CreateUsersTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('users', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->string('name');
-			$table->string('email')->unique();
-			$table->string('password', 60);
-			$table->rememberToken();
-			$table->timestamps();
-		});
+        Schema::create('emailtemplate', function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('variables',255);
+            $table->string('subject', 255);
+            $table->longText('description');
+            $table->timestamp('created_at');
+            $table->enum('status', array('1', '0'));
+        });
 	}
 
 	/**
@@ -64,7 +60,7 @@ class CreateUsersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('users');
+		//
 	}
 
 }
