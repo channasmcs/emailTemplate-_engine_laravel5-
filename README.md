@@ -1,5 +1,6 @@
 # emailTemplate-_engine_laravel5-
 [![about me](http://1.bp.blogspot.com/-uCbV5XHcLO4/VAbzG1il9LI/AAAAAAAAAUQ/yMPccsaNa3o/s1600/wonder-logo.png)](http://channasmcs.blogspot.com/)
+<br/>
 this is the way end mail with Email Template Engine .save templates in database and replace some fields and send mail
 
 frist confige your laravel email config file
