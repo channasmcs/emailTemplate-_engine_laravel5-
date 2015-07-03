@@ -6,7 +6,7 @@ frist confige your laravel email config file
 mail.php
 
 
-<pre class="java">
+<pre class="php">
 <?php
 'driver' => env('MAIL_DRIVER',' smtp'),
 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
@@ -18,7 +18,7 @@ mail.php
 'sendmail' => '/usr/sbin/sendmail -bs',
 'pretend' => false,
 ?>
-<pre class="java">
+<pre class="php">
 
 
 
@@ -32,7 +32,7 @@ MAIL_PASSWORD=MyPassword
 </pre>
 
 create data base & create email tempalte migration php artisan <b>make:migration create_users_table</b>  upload migration file 
-<pre class="java">
+<pre class="php">
 class CreateEmailtemplateTable extends Migration {
 
 	/**
@@ -72,7 +72,7 @@ in <i><b>app\Http\Controllers.php</b></i> add fuloowing function to accesss emai
 
 <b>IN CONTROLL.PHP</b>
 
-<pre class="java">
+<pre class="php">
 namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesCommands;
@@ -172,7 +172,7 @@ abstract class Controller extends BaseController {
 
 this is add your controller fuction which you create for send email
 
-<pre class="java">
+<pre class="php">
 public function index()
 	{
 
@@ -197,7 +197,7 @@ public function index()
 
 <b>$email_variable</b> mean  i define commen variable for repalce sender & reciever detail this method will easy becouse when we create template body like this (see sql file)
 
-<pre class="java">
+<pre class="php">
 <p> hello {to_fname} {to_lname} </p>
 
 <p> you have message</p>
@@ -224,7 +224,7 @@ create folder <i>resources\views</i> email_template & create template layout fil
 
 mail ot put 
 
-<pre class="java">
+<pre class="php">
 HELLO GUYS channa make your work easy please comment 
 see my blog for more
 
