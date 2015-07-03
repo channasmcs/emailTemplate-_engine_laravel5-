@@ -30,7 +30,7 @@ MAIL_USERNAME=MyUsername@gmail.com
 MAIL_PASSWORD=MyPassword
 </pre>
 
-create data base & upload migration file
+create data base & create email tempalte migration php artisan <b>make:migration create_users_table</b>  upload migration file 
 <pre>
 <?php
 
