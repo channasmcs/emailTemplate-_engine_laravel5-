@@ -14,17 +14,19 @@ mail.php
 
 
 <pre class="php">
-<?php
-'driver' => env('MAIL_DRIVER',' smtp'),
-'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-'port' => env('MAIL_PORT', 587),
-'from' => ['address' =>"MyUsername@gmail.com" , 'name' => "example"],
-'encryption' => 'tls',
-'username' => env('MyUsername@gmail.com'),
-'password' => env('MyPassword'),
-'sendmail' => '/usr/sbin/sendmail -bs',
-'pretend' => false,
-?>
+return [
+
+	'driver' => env('MAIL_DRIVER', 'smtp'),
+	'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+	'port' => env('MAIL_PORT', 587),
+	'from' => ['address' => 'youremail@gmail.com', 'name' => 'name'],
+	'encryption' => 'tls',
+	'username' => env('MAIL_USERNAME'),
+	'password' => env('MAIL_PASSWORD'),
+	'sendmail' => '/usr/sbin/sendmail -bs',
+	'pretend' => false,
+
+];
 <pre class="php">
 
 
